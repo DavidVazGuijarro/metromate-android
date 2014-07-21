@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MetroMate</string>
+    <string name="action_options">Options</string>
+    <string name="direction_rashidiya">To Rashidiya\nإلى الراشدية</string>
+    <string name="direction_jebel_ali">To Jebel Ali\nإلى جبل علي</string>
+    <string name="direction_etisalat">To Etisalat\nإلى اتصالات</string>
+    <string name="direction_creek">To Creek\nإلى الخور</string>
+    <string name="title_activity_set_direction">Set Direction</string>
+    <string name="action_settings">Settings</string>
+    <string name="station_selection_description">Which station are you at?</string>
+    <string name="station_destination_description">Which station are you headed to?</string>
+    <string name="title_activity_next_train">Next Train</string>
+    <string name="on_train">I\'m on the train</string>
+    <string name="title_activity_select_destination">Select Destination</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_back">About</string>
+    <string name="shmm_version_label">❤ MetroMate 1.0.3, by Scapehouse.</string>
+    <string name="disclaimer_label">Disclaimer:\nTimings &amp; distances displayed here are our best estimations. Actual values might vary, especially during train service disruptions.</string>
+    <string name="about_label">ABOUT SCAPEHOUSE\n\n
+                        noun | Skāp ⋅ hous |\n\n
+                        It started out in 2011 as a hobby. We\'re doing this because we love building cool things that\'ll have an impact on people\'s lives.\n\n
+                        FOLLOW THE TEAM\n\n
+                        Ali • @MachOSX\n
+                        Designer, h4cker.\n\n
+                        "Diana • @LaDyiaNova\nBusiness affairs.</string>
+    <string name="copyright">© 2014 Scapehouse. be original.</string>
+    <string name="nol_card_info">Nol Card Information</string>
+    <string name="call_rta">Call RTA</string>
+    <string name="title_activity_nol_info">Nol Card Information</string>
+    <string name="title_nol_info">Enter the number on the back&#8230;</string>
+	<string name="nol_number_field_placeholder">Nol Card Number</string>
+	<string name="nol_balance_button">Check Card Balance</string>
+
+</resources>

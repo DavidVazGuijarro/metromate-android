@@ -1,0 +1,197 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#003461"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+    
+    <ImageView
+        android:id="@+id/pixel_layer"
+        android:background="@drawable/backgroundrepeat"
+        android:alpha="0.3"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:adjustViewBounds="true" />
+    
+    <ImageView
+        android:id="@+id/screen_shadow"
+        android:background="@drawable/screen_shadow"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:adjustViewBounds="true" />
+    
+    <ImageView
+        android:id="@+id/screen_upper_glow"
+        android:background="@drawable/screen_upper_glow"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignParentTop="true"
+        android:alpha="0.5"
+        android:adjustViewBounds="true" />
+    
+    <ImageView
+        android:id="@+id/screen_lower_glow"
+        android:background="@drawable/screen_lower_glow"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.2"
+        android:adjustViewBounds="true" />
+    
+    <LinearLayout
+        android:id="@+id/direction_list_container"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:orientation="vertical" >
+		
+        <Button
+        	android:id="@+id/active_direction_button"
+        	android:layout_height="fill_parent"
+        	android:layout_width="fill_parent"
+        	android:layout_weight="5"
+        	android:text="@string/direction_rashidiya"
+        	android:shadowColor="#ffffff" 
+        	android:shadowDx="0.0"
+        	android:shadowDy="0.0"
+        	android:shadowRadius="8"
+        	android:drawableLeft="@drawable/arrow_pictogram_left"
+        	android:drawableRight="@drawable/terminus_rashidiya"
+        	android:paddingLeft="50dip"
+        	android:paddingRight="60dip"
+        	style="?android:attr/borderlessButtonStyle"
+        	android:onClick="goBack" />
+        
+        <ImageView
+        	android:id="@+id/direction_light_separator_1"
+        	android:background="@drawable/menu_light_separator"
+        	android:layout_height="fill_parent"
+        	android:layout_width="fill_parent"
+        	android:layout_weight="6"
+        	android:adjustViewBounds="true" />
+        
+        <RelativeLayout
+        	android:id="@+id/time_panel"
+        	android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:layout_weight="2" >
+    		
+            <TextView
+        		android:id="@+id/countdown_label"
+        		android:layout_width="fill_parent"
+        		android:layout_height="fill_parent"
+        		android:layout_marginBottom="195dip"
+        		android:textSize="16sp"
+        		android:textColor="@android:color/white"
+        		android:shadowColor="#ffffff" 
+        		android:shadowDx="0.0"
+        		android:shadowDy="0.0"
+        		android:shadowRadius="8"
+        		android:gravity="center_vertical|center" />
+            
+            <TextView
+        		android:id="@+id/next_train_label"
+        		android:layout_width="fill_parent"
+        		android:layout_height="fill_parent"
+        		android:layout_marginTop="-37dip"
+        		android:padding="20dip"
+        		android:textSize="34sp"
+        		android:textColor="@android:color/white"
+        		android:shadowColor="#ffffff" 
+        		android:shadowDx="0.0"
+        		android:shadowDy="0.0"
+        		android:shadowRadius="12"
+        		android:gravity="center_vertical|center" />
+            
+            <TextView
+        		android:id="@+id/eta_label"
+        		android:layout_width="fill_parent"
+        		android:layout_height="fill_parent"
+        		android:layout_marginTop="170dip"
+        		android:textSize="16sp"
+        		android:textColor="@android:color/white"
+        		android:shadowColor="#ffffff" 
+        		android:shadowDx="0.0"
+        		android:shadowDy="0.0"
+        		android:shadowRadius="8"
+        		android:gravity="center_vertical|center" />
+            
+            <Button
+	        	android:id="@+id/on_train_button"
+	        	android:background="@drawable/btn_state"
+	        	android:layout_height="60dip"
+	        	android:layout_width="fill_parent"
+	        	android:layout_marginTop="290dip"
+	        	android:layout_marginLeft="45dip"
+	        	android:layout_marginRight="45dip"
+	        	android:text="@string/on_train"
+	        	android:shadowColor="#ffffff" 
+	        	android:shadowDx="0.0"
+	        	android:shadowDy="0.0"
+	        	android:shadowRadius="8"
+	        	android:gravity="center_vertical|center"
+	        	android:visibility="invisible"
+	        	style="?android:attr/borderlessButtonStyle"
+	        	android:onClick="embarkTrain" />
+            
+    	</RelativeLayout>
+        
+        <ImageView
+        	android:id="@+id/direction_light_separator_2"
+        	android:background="@drawable/menu_light_separator"
+        	android:layout_height="fill_parent"
+        	android:layout_width="fill_parent"
+        	android:layout_weight="6"
+        	android:adjustViewBounds="true" />
+        
+        <RelativeLayout
+        	android:layout_width="fill_parent"
+        	android:layout_height="50dip" >
+            
+            <ImageView
+        		android:id="@+id/location_arrow"
+        		android:background="@drawable/location_arrow"
+        		android:layout_height="23dip"
+        		android:layout_width="23dip"
+        		android:layout_marginTop="10dip"
+        		android:layout_marginLeft="60dip"
+        		android:layout_alignParentLeft="true"
+        		android:adjustViewBounds="true" />
+            
+	        <TextView
+	            android:id="@+id/station_list_description_label"
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		android:layout_marginTop="14dip"
+	    		android:gravity="center"
+	    		android:textColor="@android:color/white"
+	    		android:shadowColor="#ffffff" 
+	        	android:shadowDx="0.0"
+	        	android:shadowDy="0.0"
+	        	android:shadowRadius="8" />
+        
+	        <ImageView
+	        	android:background="@drawable/station_node_white"
+	        	android:layout_height="23dip"
+	        	android:layout_width="31dip"
+	        	android:layout_marginTop="10dip"
+	        	android:layout_marginRight="20dip"
+	        	android:layout_alignParentRight="true"
+	        	android:adjustViewBounds="true" />
+        	
+	        <TextView
+	            android:id="@+id/station_number_label"
+	    		android:layout_width="31dip"
+	    		android:layout_height="15dip"
+	    		android:layout_marginTop="13dp"
+	    		android:layout_marginRight="20dp"
+	    		android:layout_alignParentRight="true"
+	    		android:gravity="center"
+	    		android:textColor="#002a4e"
+	    		android:textSize="14sp"
+	    		android:alpha="0.7" />
+	        
+        </RelativeLayout>
+    </LinearLayout>
+    
+</RelativeLayout>

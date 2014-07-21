@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#003461"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+    
+    <ImageView
+        android:id="@+id/pixel_layer"
+        android:background="@drawable/backgroundrepeat"
+        android:alpha="0.3"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:adjustViewBounds="true" />
+    
+    <ImageView
+        android:id="@+id/screen_shadow"
+        android:background="@drawable/screen_shadow"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:adjustViewBounds="true" />
+    
+    <ImageView
+        android:id="@+id/screen_upper_glow"
+        android:background="@drawable/screen_upper_glow"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignParentTop="true"
+        android:alpha="0.5"
+        android:adjustViewBounds="true" />
+    
+    <ImageView
+        android:id="@+id/screen_lower_glow"
+        android:background="@drawable/screen_lower_glow"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.2"
+        android:adjustViewBounds="true" />
+    
+    <ScrollView
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent" >
+        
+        <LinearLayout
+            android:orientation="vertical"
+       	    android:layout_height="wrap_content"
+    		android:layout_width="fill_parent" >
+        	    
+           	<TextView
+	            android:id="@+id/version_label"
+	    		android:layout_width="fill_parent"
+	   			android:layout_height="wrap_content"
+	    		android:layout_margin="20dp"
+		   		android:gravity="center"
+		   		android:textColor="@android:color/white"
+		   		android:shadowColor="#ffffff" 
+		       	android:shadowDx="0.0"
+		       	android:shadowDy="0.0"
+	        	android:shadowRadius="8"
+		   		android:text="@string/shmm_version_label" />
+        	
+        	<TextView
+	       	    android:id="@+id/disclaimer_label"
+	   			android:layout_width="fill_parent"
+	   			android:layout_height="wrap_content"
+	   			android:layout_margin="20dp"
+	    		android:textColor="@android:color/white"
+	    		android:shadowColor="#ffffff" 
+		       	android:shadowDx="0.0"
+		       	android:shadowDy="0.0"
+		       	android:shadowRadius="8"
+		   		android:text="@string/disclaimer_label" />
+        	
+        	<Button
+	        	android:id="@+id/nol_info_button"
+	        	android:background="@drawable/btn_state"
+	        	android:layout_height="60dip"
+	        	android:layout_width="fill_parent"
+	        	android:layout_marginLeft="20dip"
+	        	android:layout_marginRight="20dip"
+	        	android:text="@string/nol_card_info"
+	        	android:shadowColor="#ffffff" 
+	        	android:shadowDx="0.0"
+	        	android:shadowDy="0.0"
+	        	android:shadowRadius="8"
+	        	android:gravity="center_vertical|center"
+	        	style="?android:attr/borderlessButtonStyle"
+	        	android:onClick="presentNolInfo" />
+        	
+        	<Button
+	        	android:id="@+id/call_rta_button"
+	        	android:background="@drawable/btn_state"
+	        	android:layout_height="60dip"
+	        	android:layout_width="fill_parent"
+	        	android:layout_marginTop="20dip"
+	        	android:layout_marginLeft="20dip"
+	        	android:layout_marginRight="20dip"
+	        	android:text="@string/call_rta"
+	        	android:shadowColor="#ffffff" 
+	        	android:shadowDx="0.0"
+	        	android:shadowDy="0.0"
+	        	android:shadowRadius="8"
+	        	android:gravity="center_vertical|center"
+	        	style="?android:attr/borderlessButtonStyle"
+	        	android:onClick="callRTA" />
+        	
+        	<TextView
+	       	    android:id="@+id/about_label"
+	   			android:layout_width="fill_parent"
+	   			android:layout_height="wrap_content"
+	   			android:layout_margin="20dp"
+	    		android:textColor="@android:color/white"
+	    		android:shadowColor="#ffffff" 
+		       	android:shadowDx="0.0"
+		       	android:shadowDy="0.0"
+		       	android:shadowRadius="8"
+		   		android:text="@string/about_label" />
+        	
+        	<TextView
+        	    android:id="@+id/copyright_label"
+	    		android:layout_width="fill_parent"
+	   			android:layout_height="wrap_content"
+	    		android:layout_margin="20dp"
+		   		android:gravity="center"
+		   		android:textColor="@android:color/white"
+		   		android:shadowColor="#ffffff" 
+		       	android:shadowDx="0.0"
+		       	android:shadowDy="0.0"
+	        	android:shadowRadius="8"
+		   		android:text="@string/copyright" />
+        	
+        </LinearLayout>
+        	
+    </ScrollView>
+    
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#003461"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+    
+    <ImageView
+        android:id="@+id/pixel_layer"
+        android:background="@drawable/backgroundrepeat"
+        android:alpha="0.3"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:adjustViewBounds="true" />
+    
+    <ImageView
+        android:id="@+id/screen_shadow"
+        android:background="@drawable/screen_shadow"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:adjustViewBounds="true" />
+    
+    <ImageView
+        android:id="@+id/screen_upper_glow"
+        android:background="@drawable/screen_upper_glow"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignParentTop="true"
+        android:alpha="0.5"
+        android:adjustViewBounds="true" />
+    
+    <ImageView
+        android:id="@+id/screen_lower_glow"
+        android:background="@drawable/screen_lower_glow"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.2"
+        android:adjustViewBounds="true" />
+    
+    <LinearLayout
+        android:id="@+id/direction_list_container"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:orientation="vertical" >
+		
+        <Button
+        	android:id="@+id/rashidiya_button"
+        	android:layout_height="fill_parent"
+        	android:layout_width="fill_parent"
+        	android:layout_weight="4"
+        	android:text="@string/direction_rashidiya"
+        	android:shadowColor="#ffffff" 
+        	android:shadowDx="0.0"
+        	android:shadowDy="0.0"
+        	android:shadowRadius="8"
+        	android:drawableLeft="@drawable/arrow_pictogram_left"
+        	android:drawableRight="@drawable/terminus_rashidiya"
+        	android:paddingLeft="50dip"
+        	android:paddingRight="60dip"
+        	style="?android:attr/borderlessButtonStyle"
+        	android:onClick="setDirection" />
+        
+        <ImageView
+        	android:id="@+id/direction_light_separator_1"
+        	android:background="@drawable/menu_light_separator"
+        	android:alpha="1.0"
+        	android:layout_height="fill_parent"
+        	android:layout_width="fill_parent"
+        	android:layout_weight="5"
+        	android:adjustViewBounds="true" />
+        
+        <Button
+        	android:id="@+id/jebel_ali_button"
+        	android:layout_height="fill_parent"
+        	android:layout_width="fill_parent"
+        	android:layout_weight="4"
+        	android:text="@string/direction_jebel_ali"
+        	android:shadowColor="#ffffff" 
+        	android:shadowDx="0.0"
+        	android:shadowDy="0.0"
+        	android:shadowRadius="8"
+        	android:drawableRight="@drawable/arrow_pictogram_right"
+        	android:paddingLeft="60dip"
+        	android:paddingRight="50dip"
+        	style="?android:attr/borderlessButtonStyle"
+        	android:onClick="setDirection" />
+        
+        <ImageView
+        	android:id="@+id/direction_light_separator_2"
+        	android:background="@drawable/menu_light_separator"
+        	android:layout_height="fill_parent"
+        	android:layout_width="fill_parent"
+        	android:layout_weight="5"
+        	android:adjustViewBounds="true" />
+        
+        <Button
+        	android:id="@+id/etisalat_button"
+        	android:layout_height="fill_parent"
+        	android:layout_width="fill_parent"
+        	android:layout_weight="4"
+        	android:text="@string/direction_etisalat"
+        	android:shadowColor="#ffffff" 
+        	android:shadowDx="0.0"
+        	android:shadowDy="0.0"
+        	android:shadowRadius="8"
+        	android:drawableLeft="@drawable/arrow_pictogram_left"
+        	android:paddingLeft="50dip"
+        	android:paddingRight="60dip"
+        	style="?android:attr/borderlessButtonStyle"
+        	android:onClick="setDirection" />
+        
+        <ImageView
+        	android:id="@+id/direction_light_separator_3"
+        	android:background="@drawable/menu_light_separator"
+        	android:layout_height="fill_parent"
+        	android:layout_width="fill_parent"
+        	android:layout_weight="5"
+        	android:adjustViewBounds="true" />
+        
+        <Button
+        	android:id="@+id/creek_button"
+        	android:layout_height="fill_parent"
+        	android:layout_width="fill_parent"
+        	android:layout_weight="4"
+        	android:text="@string/direction_creek"
+        	android:shadowColor="#ffffff" 
+        	android:shadowDx="0.0"
+        	android:shadowDy="0.0"
+        	android:shadowRadius="8"
+        	android:drawableRight="@drawable/arrow_pictogram_right"
+        	android:paddingLeft="60dip"
+        	android:paddingRight="50dip"
+        	style="?android:attr/borderlessButtonStyle"
+        	android:onClick="setDirection" />
+        
+    </LinearLayout>
+    
+</RelativeLayout>

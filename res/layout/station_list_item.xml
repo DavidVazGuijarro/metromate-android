@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="fill_parent"
+    android:layout_height="90dip" >
+    
+    <RelativeLayout
+        android:id="@+id/station_list_item_image"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="100dip"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="50dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true" >
+        
+        <ImageView
+        	android:id="@+id/station_list_item_line_upper"
+        	android:layout_width="25dip"
+        	android:layout_height="56dip"
+        	android:layout_marginTop="-13dip"
+        	android:layout_marginLeft="6dip"
+        	android:src="@drawable/line_red_vertical"
+        	android:scaleType="fitXY" />
+        
+        <ImageView
+        	android:id="@+id/station_list_item_line_lower"
+        	android:layout_width="25dip"
+        	android:layout_height="fill_parent"
+        	android:layout_marginBottom="-14dip"
+        	android:layout_marginTop="37dip"
+        	android:layout_marginLeft="6dip"
+        	android:src="@drawable/line_red_vertical"
+        	android:scaleType="fitXY" />
+        
+        <ImageView
+        	android:id="@+id/station_list_item_node"
+        	android:layout_width="36dip"
+        	android:layout_height="26dip"
+        	android:layout_marginTop="29dip"
+        	android:src="@drawable/node_red"
+        	android:adjustViewBounds="true" />
+        
+        <TextView
+        	android:id="@+id/station_list_item_node_label"
+        	android:layout_width="36dip"
+        	android:layout_height="17dip"
+        	android:layout_marginTop="33dip"
+        	android:textSize="16sp"
+        	android:textColor="@android:color/white"
+        	android:gravity="center" />
+        
+    </RelativeLayout>
+    
+	<TextView
+        android:id="@+id/station_list_item_label"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="125dip"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:gravity="center_vertical|left" />
+	
+	<ImageView
+        	android:id="@+id/airplane_pictogram"
+        	android:layout_width="25dip"
+        	android:layout_height="25dip"
+        	android:layout_marginTop="32dip"
+        	android:layout_marginRight="20dip"
+        	android:layout_alignParentRight="true"
+        	android:src="@drawable/airplane_pictogram"
+        	android:adjustViewBounds="true"
+        	android:visibility="invisible" />
+	
+</RelativeLayout>
